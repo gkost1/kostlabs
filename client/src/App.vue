@@ -4,6 +4,7 @@ import SideNav from './components/SideNav.vue';
 
 <template>
   <SideNav />
+  <router-view />
 </template>
 
 <style lang="scss">

@@ -6,13 +6,21 @@
         </div>
         <div class="kost-side-nav__links">
             
-            <router-link to="/home" class="kost-side-nav__link">
+            <router-link to="/" class="kost-side-nav__link">
                 <Home />
                 Home
+            </router-link>
+            <router-link to="/projects" class="kost-side-nav__link">
+                <FolderGit />
+                Projects
             </router-link>
             <router-link to="/blog" class="kost-side-nav__link">
                 <NotebookText />
                 Blog
+            </router-link>
+            <router-link to="/photos" class="kost-side-nav__link">
+                <Camera />
+                Photography
             </router-link>
             <router-link to="/about" class="kost-side-nav__link">
                 <Info />
@@ -24,7 +32,7 @@
 
 <script setup lang="ts">
 import logoUrl from "@/assets/images/logo.png"; 
-import { Info, NotebookText, Home } from 'lucide-vue-next'; 
+import { Info, NotebookText, Home, FolderGit, Camera } from 'lucide-vue-next'; 
 </script>
 
 <style lang="scss">

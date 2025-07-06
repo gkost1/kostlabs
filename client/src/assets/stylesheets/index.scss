@@ -1,2 +1,5 @@
 @forward '_colors.scss';
 
+@function space($n) {
+    @return $n * 0.25rem;
+}

@@ -1,17 +1,22 @@
 <script setup lang="ts">
-import Home from './pages/Home.vue';
+import SideNav from './components/SideNav.vue';
 </script>
 
 <template>
-  <Home />
+  <SideNav />
 </template>
 
 <style lang="scss">
 @use './assets/stylesheets/index.scss' as *;
 
-body {
-    background-color: $background-color;
-    color: $primary;
-    font-family: 'Arial', sans-serif;
-  }
+#app {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  background-color: $background-color;
+  color: $primary;
+  font-family: 'Epilogue', sans-serif;
+}
+
 </style>

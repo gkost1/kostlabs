@@ -38,10 +38,10 @@ import { Info, NotebookText, Home, FolderGit, Camera } from 'lucide-vue-next';
 <style lang="scss">
 @use '../assets/stylesheets/index.scss' as *;
 .kost-side-nav {
-  width: 15%;
+  width: 10%;
   height: 100%;
   background-color: $background-secondary;
-  padding: space(2) space(4);
+  //padding: space(2);
   border: 1px solid transparent;
 
   &:hover {
@@ -59,13 +59,13 @@ import { Info, NotebookText, Home, FolderGit, Camera } from 'lucide-vue-next';
     }
 
     h2 {
-      font-size: 26px;
+      font-size: 20px;
       font-weight: 600;;
       margin: 0;
     }
   }
   &__links {
-    margin-top: space(8);
+    margin-top: space(6);
     display: flex;
     flex-direction: column;
     gap: space(1);
@@ -73,15 +73,14 @@ import { Info, NotebookText, Home, FolderGit, Camera } from 'lucide-vue-next';
   &__link {
     display: flex;
     align-items: center;    
-    gap: 0.5rem;           
+    gap: space(2);           
     text-decoration: none;  
     color: inherit;        
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+    padding: space(2) space(4);
     transition: background 0.2s;
     font-size: 20px;
     &:hover {
-        background-color: #f0f0f0;
+        background-color: $gray-50;
     }
   }
 }

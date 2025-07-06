@@ -16,11 +16,8 @@ dev:
 	@sleep 2  # allow backend time to boot
 
 	@echo "Starting frontend..."
-	@cd $(FRONTEND_DIR) && npm run dev > ../$(FRONTEND_LOG) 2>&1 & echo $$! > ../$(FRONTEND_PID)
-	@sleep 1
-	@echo "Development environment is running."
-	@echo "  Backend: http://localhost:3000/"
-	@echo "  Frontend: http://localhost:5173/"
+	@cd $(FRONTEND_DIR) && npm run dev
+
 
 lint: lint-backend lint-frontend
 	@echo "Linting complete for backend and frontend."

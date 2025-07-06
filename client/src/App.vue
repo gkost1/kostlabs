@@ -6,6 +6,12 @@ import Home from './pages/Home.vue';
   <Home />
 </template>
 
-<style scoped>
+<style lang="scss">
+@use './assets/stylesheets/index.scss' as *;
 
+body {
+    background-color: $background-color;
+    color: $primary;
+    font-family: 'Arial', sans-serif;
+  }
 </style>

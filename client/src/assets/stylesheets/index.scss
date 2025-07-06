@@ -3,3 +3,6 @@
 @function space($n) {
     @return $n * 0.25rem;
 }
+
+//constants
+$border-radius: 0.5rem;

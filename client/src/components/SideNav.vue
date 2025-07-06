@@ -24,7 +24,7 @@
             </router-link>
             <router-link to="/about" class="kost-side-nav__link">
                 <Info />
-                About Me
+                Contact
             </router-link>
         </div>
 
@@ -49,6 +49,7 @@ import { APP_VERSION, APP_DATE } from '../assets/common/enums.ts';
   height: 100%;
   background-color: $background-secondary;
   border: 1px solid transparent;
+  border-right-color: $gray-100;
   position: relative;
 
   &:hover {

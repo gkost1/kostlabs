@@ -27,12 +27,19 @@
                 About Me
             </router-link>
         </div>
+
+        <div class="kost-side-nav__footer">
+            <p>Version {{ APP_VERSION }}</p>
+            <p>Last updated {{ APP_DATE }}</p>
+            
+        </div>
     </div>
 </template>
 
 <script setup lang="ts">
 import logoUrl from "@/assets/images/logo.png"; 
 import { Info, NotebookText, Home, FolderGit, Camera } from 'lucide-vue-next'; 
+import { APP_VERSION, APP_DATE } from '../assets/common/enums.ts';
 </script>
 
 <style lang="scss">
@@ -41,8 +48,8 @@ import { Info, NotebookText, Home, FolderGit, Camera } from 'lucide-vue-next';
   width: 10%;
   height: 100%;
   background-color: $background-secondary;
-  //padding: space(2);
   border: 1px solid transparent;
+  position: relative;
 
   &:hover {
     border-right-color: $gray-200;
@@ -81,6 +88,18 @@ import { Info, NotebookText, Home, FolderGit, Camera } from 'lucide-vue-next';
     font-size: 20px;
     &:hover {
         background-color: $gray-50;
+    }
+  }
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: $gray-500;
+    
+    p {
+      margin: 0;
     }
   }
 }
